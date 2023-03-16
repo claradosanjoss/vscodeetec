@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compa">
+        <meta name="viewport" content="width-devide-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+<body>
+  <h1>Título 1 </h1>
+    <p>aulas de html e javascript</p>
+    <h1> Título 2 </h1>
+    <button onclick="seila()"> Mudar </button>
+    <br>
+    <img src="clara/img.jpg" id="t" width="200" height="200" onmouseover="TrocarImg()"  >
+
+    <p><button onclick="TrocarImg()" > Mudar </button></p>
+    <p>
+      Nome : <input type="text" id="nome" name="none" value="" class="x"
+      onblur="arflecha()" /> <span style="color:red"></span>
+    </p>
+    <!-- -->
+    </body>
+<script>
+    //essa função é chamada arrow functiob(funçao de flecha)
+
+    const arflecha=()=>{
+        let campo = document.getElementsByClassName("x");
+        let sm = document.getElementsByTagName("span");
+        if(campo[0].value.length == 0){
+          sm[0].innerHTML ="*";
+          campo[0].focus();
+        }else{
+        alert(campo[0].value);
+        }
+    }
+     /*
+     quero que o EcmaScript
+     pegue as tags no html
+     */
+       //tag h1, p
+       //O que é função?
+       //função nomeada
+       function seila(){
+       let titulo = document.getElementsByTagName("h1");
+       titulo[0].innerHTML = "Novo js";
+       titulo[1].innerHTML = "JavaScript";
+       }
+       let ligaDes1 = 0;
+
+       function TrocarImg(){
+         //preciso pegar a imagem
+         let img = document.getElementById ("t");
+         if( ligaDes1 == 1){
+         //alert(img.src);
+         img.src="clara/thecoon.jpeg";
+         ligaDes1 = 0;
+         img.style.border='none';
+       }else{
+        img.src="clara/img.jpg"
+        ligaDes1 = 1;
+        //aplicar css via javascript
+        img.style.border="1px";
+        img.style.borderStyle="solid";
+        img.style.borderColor="blue";
+       }
+      }
+
+
+  </script>
+</html>
