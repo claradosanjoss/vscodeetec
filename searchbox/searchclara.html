@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8'>
+    <meta http-equiv="X-UA-Compa">
+    <meta name="viewport" content="width-devide-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+      .search-container {
+        background-color: rgb(92, 234, 104);
+        background-size: cover;
+        padding: 20px;
+      }
+      .search-box {
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        width: 90%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="search-container">
+      <form>
+        <input type="text" class="search-box" placeholder="Digite um animal...">
+        <a href="imagens/"></a>
+        <button onclick="pesquisa" style="width: 6%; font-size: 20px; padding: 10px; background-color: aliceblue; border-radius: 5px; border: none;" >Buscar</button>
+      </form>
+    </div>
+    <div class="result-container">
+      <!-- images will appear here -->
+    </div>
+    <script>
+      let pesquisa = 0
+
+      function pesquisa() {
+        let img = document.getElementById ("t");
+         if( ligaDes1 == cachorro){
+         //alert(img.src);
+         img.src="imagens/cachorro.jpeg";
+         ligaDes1 = 0;
+         img.style.border='none';
+       }else{
+        img.src"imagens/gato.jpeg"
+        ligaDes1 = 1;
+      } pesquisa
+      // you can use JavaScript to fetch animal images based on the user's input
+    </script>
+  </body>
+</html>
