@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <style>
+        body {
+            background-color: #0e0816;
+            color: #e7dfdd;
+        }
+    </style>
+    <header><img src="imagens/Logotipo Doceria Confeitaria Bolo Criativo (1).png" align="right" width="200px" height="200px"></header>
+
+    <header>
+        <form name="formCadastro" onsubmit="return validarFormulari()" method="post">
+            <br><label style="color: #e61f93" name="nome">Nome:</label>
+            <br><input style="background-color: #ffccdc; border-radius: 7px; border:none; color:black; font-family: 'Lucida Bright';" type="text" name="nome"></br>
+            <br><label style="color: #e61f93; border:none;" for="email">Email:</label>
+            <br><input style="background-color: #ffccdc; border-radius: 7px; border:none; color:black; font-family: 'Lucida Bright';" type="text" email="email"></br>
+            <br><button style="background-color: #ffccdc; border-radius: 7px; border: none; color: black; font-family: 'Lucida Bright;" type="submit">Enviar</button>
+        </form>
+        <script>
+            function validarFormulari(){
+                var nomePessoa = document.forms["formCadastro"]["nome"].value;
+                var emailPessoa = document.forms["formCadastro"]["email"].value;
+                if (nomePessoa == "") {
+                    alert("Favor informar o seu nome!");
+                    return false;     
+                }
+                else if (emailPessoa == "") {
+                    alert("Favor informe seu Email!");
+                    return false;
+                }
+                else{
+                    alert("Olá, " + nomePessoa + " !");
+                    return true;
+                }
+            }
+        </script>
+    </head>
+    </header>
+    <body>
+        <p>
+            <font size="8" face="Lucida Bright">
+                <div style="text-align:center">
+                 Conheça Nossos Produtos!
+                </div>
+            </font>
+            </center>
+            </p>
+            <figure>
+                <p>
+                    <center>
+                    <img src="imagens/brigadeirocomum.jpeg"
+                    width="640px" alt="Brigadeiro Tradicional">
+                    <figcaption style="font-family:Lucida Bright"><br>Brigadeiro Tradicional</br>Ingredietes: Leite condensado, creme de leite, chocolate em pó, manteiga sem sal e chocolate granulado para decorar</figcaption>
+                    </center></p>
+            </figure>
+            <figure>
+                <p>
+                    <center>
+                    <img src="imagens/brigadeiro-de-ninho.jpeg" width="640px" height="450px" alt="Brigadeiro de Leite em Pó">
+                    <figcaption style="font-family:Lucida Bright"><br>Brigadeiro de Leite em Pó</br>Ingredietes: Leite condensado, manteiga sem sal e leite em pó</figcaption>
+                    </center></p>
+            </figure>
+            <figure>
+                <p>
+                    <center>
+                    <img src="imagens/brigadeiro-de-morango_resized.jpeg" height="450px" width="640px" alt="Brigadeiro de Morango">
+                    <figcaption style="font-family:Lucida Bright"><br>Brigadeiro De Morango</br>Ingredietes: Leite condensado, manteiga, gelatina de morango</figcaption>
+            </figure>
+            <figure>
+                <p>
+                    <center>
+                    <img src="imagens/beijinhor.jpeg" alt="Beijinho">
+                    <figcaption style="font-family:Lucida Bright"><br>Beijinho</br>Ingredietes: Leite condensado, manteiga sem sal e coco ralado</figcaption>
+                    </center></p>
+            </figure>
+
+            <figure>
+                <p>
+                    <center>
+                    <img src="imagens/brigadeiro-de-milho.jpeg" alt="Brigadeiro de Milho">
+                    <figcaption style="font-family:Lucida Bright"><br>Brigadeiro De Milho</br>Ingredietes: Leite condensado, manteiga sem sal e milho verde</figcaption>
+                    </center></p>
+            </figure>
+            <figure>
+                <p>
+                    <center>
+                    <img src="imagens/brigadeiro-pe-de-moleque.jpeg" alt="Brigadeiro de Pé de Moleque">
+                    <figcaption style="font-family:Lucida Bright"><br>Brigadeiro De Pé De Moleque</br>Ingredietes: Leite condensado, manteiga sem sal, chocolate branco e pé de moleque</figcaption>
+                    </center></p>
+            </figure>
+            <figure>
+                <p>
+                    <center>
+                    <img src="imagens/tortalimao_resized.jpeg" width="640px" alt="Brigadeiro de Torta de Limão">
+                    <figcaption style="font-family:Lucida Bright"><br>Brigadeiro De Torta De Limão</br>Ingredietes: Leite condensado, manteiga sem sal, raspas de limão, suco de limão, bolacha maizena e creme de leite</figcaption>
+                    </center></p>
+            </figure>
+            <figure>
+                <p>
+                    <center>
+                    <img src="imagens/churros_resized.jpeg" width="640px" alt="Brigadeiro de Churros">
+                    <figcaption style="font-family:Lucida Bright"><br>Brigadeiro De Churros</br>Ingredietes: Leite condensado, manteiga, doce de leite, açúcar refinado e canela em pó</figcaption>
+                    </center></p>
+            </figure>
+            <figure>
+                <p>
+                    <center>
+                    <img src="imagens/R.jpeg" alt="Alfajor">
+                    <figcaption style="font-family:Lucida Bright"><br>Alfajor</br>Ingredietes: açúcar, ovos, essência de baunilha, conhaque, farinha de trigo, maizena, fermento em pó, leite, doce de leite cremoso, essência de baunilha e chocolate branco </figcaption>
+                    </center></p>
+            </figure>
+            <figure>
+                <p>
+                    <center>
+                    <img src="imagens/carol.png" height="450px" width="640px" alt="Carolina Recheada">
+                    <figcaption style="font-family:Lucida Bright"><br>Carolina Recheada</br>Ingredietes: água, manteiga, açúcar, sal, farinha de trigo, ovos,
+                        manteiga, leite, leite condensado, essência de baunilha, amido de milho, chocolate ao leite, creme de leite</figcaption>
+                    </center></p>
+            </figure>
+            <footer>
+                <font face="Lucida Bright">
+                    <div style="text-align: right;">
+                    <br>CNPJ: 11.222.333/2007-03
+                    <br>Endereço: Rua Marilyn Monroe, Número: 123, Bairro Macacos Árticos
+                    <br>Telefone: (15) 99849-3267
+                    </div>
+                </font>
+            </footer>
+            </body>
+        </body> 
+        </html>
+  </body>
+</html>
